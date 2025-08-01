@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head lang="ru">
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta
     http-equiv="X-UA-Compatible"
     content="IE=edge"
@@ -13,8 +13,12 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250731175440"
+    href="css/style.min.css?_v=20250801175859"
   />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250801175859" rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
   <link
@@ -45,11 +49,35 @@
     rel="manifest"
     href="/img/favicon/site.webmanifest"
   />
+
 </head>
 
     <body>
         <div class="header">
-  <div class="container"><h1>TNMT Gulp</h1></div>
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+        <picture><source srcset="img/logo-text.webp" type="image/webp"><img src="img/logo-text.png" alt=""></picture>
+      </a>
+      <nav class="header__nav nav">
+        <button type="button" class="nav__close close"></button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link active">Главная</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+            <button type="button" class="nav__icon"><img src="img/icon/i-arrow-down.svg" alt="Стрелочка вниз"></button>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions actions">
+        <button type="button" class="btn btn--grey">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -65,6 +93,6 @@
     <div class="container"><h3>Вот это подвал</h3></div>
 </div>
 
-        <script src="js/app.min.js?_v=20250731175440"></script>
+        <script src="js/app.min.js?_v=20250801175859"></script>
     </body>
 </html>
