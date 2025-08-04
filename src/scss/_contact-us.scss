@@ -1,0 +1,32 @@
+.contact-us {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  //.contact-us__body
+  &__body {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgba($color: $color-on-primary, $alpha: 1);
+    max-width: 480px;
+  }
+
+  //.contact-us__label
+  &__label {
+    margin-bottom: 20px;
+  }
+
+  //.contact-us__title
+  &__title {
+    margin-bottom: 30px;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  //.contact-us__form
+  &__form {
+  }
+
+
+}

@@ -13,13 +13,13 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250804174928"
+    href="css/style.min.css?_v=20250804181952"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250804174928"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250804181952"
     rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
@@ -297,12 +297,43 @@
   </div>
 </div>
 
+  <div class="contact-us section" style="background-image: url('./img/contact-us.jpeg')">
+  <div class="container">
+    <div class="contact-us__body">
+      <div class="contact-us__label section-label">
+        <p>Обратная связь</p>
+      </div>
+      <h2 class="contact-us__title">
+        Оставьте заявку на интересующую вас услугу
+      </h2>
+      <form action="" class="contact-us__form form ">
+        <div class="form__input">
+          <input type="text" class="" name="name" id="id_name" minlength="3" maxlength="20" pattern="[А-Яа-яЁё\s]+" required >
+          <label for="id_name">Имя</label>
+        </div>
+        <div class="form__input">
+          <input type="tel" class="" name="name" id="id_tel" minlength="10" maxlength="15" required >
+          <label for="id_tel">Номер телефона</label>
+        </div>
+        <div class="form__bottom">
+          <div class="form__socials socials">
+            <a href="" class="socials__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
+            <a href="" class="socials__link"><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
+            <a href="" class="socials__link"><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+          </div>
+          <button type="button" class="form__submit btn btn--grey">Перезвоните мне</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 </main>
 
 <div class="footer">
     <div class="container"><h3>Вот это подвал</h3></div>
 </div>
 
-<script src="js/app.min.js?_v=20250804174928"></script>
+<script src="js/app.min.js?_v=20250804181952"></script>
 </body>
 </html>
