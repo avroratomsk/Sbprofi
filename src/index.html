@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html>
-    @@include('html/head.html', {
-        "title":"Сборка GULP"
-    })
-    <body>
-        @@include('html/_header.html')
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+@@include('html/_header.html')
 
-        <main>
-            @@include('html/_hello.html')
-        </main>
+<main>
+  <section class="services section">
+    <div class="container">
+      <div class="section-label services__label">
+        <p>Услуги</p>
+      </div>
+      <h2 class="services__title title">Мы предлагаем лучшие услуги</h2>
+      <p class="services__descr">
+        Мы занимаемся полным спектром услуг для вашей безопасности, проверьте близких, коллег, партнеров на честность
+      </p>
+      @@include('html/_services.html')
+      <div class="services__link">
+        <a href="">Все услуги</a>
+        <img src="@img/icon/i-arrow-right.svg" alt="">
+      </div>
+    </div>
+  </section>
 
-        @@include('html/_footer.html')
+  <section class="index-about section">
+    <div class="container">
+      <div class="index-about__row">
+        <div class="index-about__col">
+          <div class="index-about__image">
+            <img src="@img/about-logo.png" alt="">
+          </div>
+        </div>
+        <div class="index-about__col">
+          <div class="section-label index-about__label">
+            <p>Руководитель</p>
+          </div>
+          <h2 class="index-about__title title">СБ-ПРОФИ</h2>
+          <p class="index-about__descr">
+            Разнообразный и богатый опыт сложившаяся структура организации влечет за собой процесс внедрения и
+            модернизации существенных финансовых и административных условий. Таким образом постоянный количественный
+            рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании системы
+            обучения кадров, соответствует насущным потребностям.
+          </p>
+          <button type="button" class="index-about__btn btn btn--grey">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <script src="js/app.min.js"></script>
-    </body>
+  @@include('html/_trust.html')
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
 </html>

@@ -42,3 +42,35 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+img {
+  display: block;
+}
+
+.section {
+  padding: 50px 0;
+
+
+}
+
+.section-label {
+  display: inline-flex;
+
+  p {
+    padding: 12px 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+
+.title {
+  color: rgba($color: $color-primary, $alpha: 1);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+
+  @media screen and (max-width: 490px) {
+    font-size: 35px;
+  }
+}

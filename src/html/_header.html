@@ -8,10 +8,21 @@
       <nav class="header__nav nav">
         <button type="button" class="nav__close close"></button>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link active">Главная</a></li>
+          <li class="nav__item active"><a href="#" class="nav__link">Главная</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">О нас</a>
-            <button type="button" class="nav__icon"><img src="@img/icon/i-arrow-down.svg" alt="Стрелочка вниз"></button>
+            <div class="nav__item-inner">
+              <a href="#" class="nav__link">О нас</a>
+              <button type="button" class="nav__icon">
+                <img src="@img/icon/i-arrow-down.svg" alt="Стрелочка вниз">
+              </button>
+            </div>
+            <ul class="nav__submenu submenu">
+              <li class="submenu__item"><a href="" class="submenu__link">Лицензия</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Команда</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Портфолио</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Награды</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Сертификаты</a></li>
+            </ul>
           </li>
           <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>

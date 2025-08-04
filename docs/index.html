@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head lang="ru">
+<head lang="ru">
   <meta charset="UTF-8"/>
   <meta
     http-equiv="X-UA-Compatible"
@@ -13,12 +13,12 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250801175859"
+    href="css/style.min.css?_v=20250804125420"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250801175859" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250804125420" rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
   <link
@@ -52,8 +52,8 @@
 
 </head>
 
-    <body>
-        <div class="header">
+<body>
+<div class="header">
   <div class="container">
     <div class="header__inner">
       <a href="/" class="header__logo">
@@ -63,10 +63,21 @@
       <nav class="header__nav nav">
         <button type="button" class="nav__close close"></button>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link active">Главная</a></li>
+          <li class="nav__item active"><a href="#" class="nav__link">Главная</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">О нас</a>
-            <button type="button" class="nav__icon"><img src="img/icon/i-arrow-down.svg" alt="Стрелочка вниз"></button>
+            <div class="nav__item-inner">
+              <a href="#" class="nav__link">О нас</a>
+              <button type="button" class="nav__icon">
+                <img src="img/icon/i-arrow-down.svg" alt="Стрелочка вниз">
+              </button>
+            </div>
+            <ul class="nav__submenu submenu">
+              <li class="submenu__item"><a href="" class="submenu__link">Лицензия</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Команда</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Портфолио</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Награды</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Сертификаты</a></li>
+            </ul>
           </li>
           <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
@@ -81,18 +92,132 @@
 </div>
 
 
-        <main>
-            <div class="container">
-    <h2>Пример подключения файла</h2>
-    <p>1 - При подключении картинок вместо полного пути указываем <code>@img/</code> и он сам заменит на нужный путь</p>
-    <p>2 - При добавлении/удалении файлов шрифтов - удаляем файл <code>src/scss/fonts.scss</code> и GULP подключит все учитывая изменения</p>
+<main>
+  <section class="services section">
+    <div class="container">
+      <div class="section-label services__label">
+        <p>Услуги</p>
+      </div>
+      <h2 class="services__title title">Мы предлагаем лучшие услуги</h2>
+      <p class="services__descr">
+        Мы занимаемся полным спектром услуг для вашей безопасности, проверьте близких, коллег, партнеров на честность
+      </p>
+      <div class="services-grid">
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-1.webp" type="image/webp"><img src="img/services/s-1.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-2.webp" type="image/webp"><img src="img/services/s-2.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-3.webp" type="image/webp"><img src="img/services/s-3.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-4.webp" type="image/webp"><img src="img/services/s-4.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-5.webp" type="image/webp"><img src="img/services/s-5.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="services-grid__item">
+    <a href="" class="services-grid__image">
+      <picture><source srcset="img/services/s-6.webp" type="image/webp"><img src="img/services/s-6.jpg" alt=""></picture>
+    </a>
+    <div class="services-grid__content">
+      <a href="" class="services-grid__title">Проверка на полиграфе</a>
+      <p class="services-grid__descr">
+        Узнайте правду при помощи профессионального оборудования
+      </p>
+      <a href="" class="services-grid__link">Узнать подробнее</a>
+    </div>
+  </div>
 </div>
-        </main>
 
-        <div class="footer">
+      <div class="services__link">
+        <a href="">Все услуги</a>
+        <img src="img/icon/i-arrow-right.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="index-about section">
+    <div class="container">
+      <div class="index-about__row">
+        <div class="index-about__col">
+          <div class="index-about__image">
+            <picture><source srcset="img/about-logo.webp" type="image/webp"><img src="img/about-logo.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="index-about__col">
+          <div class="section-label index-about__label">
+            <p>Руководитель</p>
+          </div>
+          <h2 class="index-about__title title">СБ-ПРОФИ</h2>
+          <p class="index-about__descr">
+            Разнообразный и богатый опыт сложившаяся структура организации влечет за собой процесс внедрения и
+            модернизации существенных финансовых и административных условий. Таким образом постоянный количественный
+            рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании системы
+            обучения кадров, соответствует насущным потребностям.
+          </p>
+          <button type="button" class="index-about__btn btn btn--grey">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust section">
+  <h2 class="trust__title title">Нам доверяют</h2>
+</div>
+</main>
+
+<div class="footer">
     <div class="container"><h3>Вот это подвал</h3></div>
 </div>
 
-        <script src="js/app.min.js?_v=20250801175859"></script>
-    </body>
+<script src="js/app.min.js?_v=20250804125420"></script>
+</body>
 </html>

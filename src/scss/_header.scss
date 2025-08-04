@@ -6,7 +6,6 @@
 
   //.header__inner
   &__inner {
-    padding: 5px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,50 +30,73 @@
 
 .nav {
 
-  /*@media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: $color-on-primary;
-  }*/
+  }
 
   // .nav__list
   &__list {
     display: flex;
     align-items: center;
-    gap: 25px;
+    //gap: 25px;
   }
 
   //.nav__item
   &__item {
+    position: relative;
+    border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0);
+    transition: $animation-speed;
+
+    @media(hover: hover) {
+      &:hover {
+        border-color: rgba($color: $color-primary, $alpha: 1);
+
+        .submenu {
+          display: block;
+        }
+
+        .nav__icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &.active {
+      border-color: rgba($color: $color-primary, $alpha: 1);
+
+      .nav__link {
+        font-weight: 600;
+      }
+    }
+  }
+
+  //.nav__item-inner
+  &__item-inner {
     display: flex;
     align-items: center;
     gap: 4px;
   }
 
+
   //.nav__link
   &__link {
     display: block;
-    padding: 2px 0px 1px;
-    border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0);
-    transition: $animation-speed;
+    padding: 16px 13px 17px 13px;
 
     &:active {
       opacity: 0.9;
     }
+  }
 
-    &.active {
-      border-color: rgba($color: $color-primary, $alpha: 1);
-      font-weight: 600;
-    }
-
-    @media(hover: hover) {
-      &:hover {
-        border-color: rgba($color: $color-primary, $alpha: 1);
-      }
-    }
+  //.nav__icon
+  &__icon {
+    transition: $animation-speed;
   }
 
   //.nav__close
@@ -82,9 +104,40 @@
     display: none;
   }
 
-
 }
 
 .actions {
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 290px;
+  background: rgba($color: $color-on-primary, $alpha: 1);
+  border: 1px solid rgba($color: $color-primary, $alpha: 0.15);
+
+  //.submenu__item
+  &__item {
+    &:not(:last-child) .submenu__link {
+      border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0.15);
+    }
+  }
+
+  //.submenu__link
+  &__link {
+    display: block;
+    padding: 10px 10px;
+    transition: $animation-speed;
+
+    @media(hover: hover) {
+      &:hover {
+        background: rgba($color: $color-primary, $alpha: 0.03);
+      }
+    }
+
+  }
+
 }
 
