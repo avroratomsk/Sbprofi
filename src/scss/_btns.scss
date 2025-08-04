@@ -3,6 +3,7 @@
   border-radius: 5px;
   font-weight: 500;
   border: 1px solid rgba(51, 51, 51, 0.48);
+  transition: $animation_speed;
 
   &:active {
     background: rgba($color: $color-primary, $alpha: 0.9);
@@ -13,7 +14,6 @@
   &--grey {
     background: rgba($color: $color-primary, $alpha: 1);
     color: $color-on-primary;
-    transition: $animation_speed;
 
     @media(hover: hover) {
       &:hover {
@@ -21,6 +21,20 @@
         color: $color-primary;
       }
     }
+  }
+
+  //.btn--white
+  &--white {
+    background: rgba($color: $color-on-primary, $alpha: 1);
+    color: $color-primary;
+
+    @media(hover: hover) {
+      &:hover {
+        background: rgba($color: $color-primary, $alpha: 1);
+        color: $color-on-primary;
+      }
+    }
+
   }
 
 }
