@@ -67,7 +67,7 @@
       object-position: top;
     }
 
-    &::before {
+    /*&::before {
       content: "";
       position: absolute;
       top: 0;
@@ -76,7 +76,7 @@
       height: 100%;
       background: linear-gradient(180deg, rgba(3, 6, 15, 0.1), rgb(246, 246, 246) 100%);
       z-index: 2;
-    }
+    }*/
   }
 
   //.services-grid__content
