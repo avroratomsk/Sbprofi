@@ -44,7 +44,15 @@
   &__list {
     display: flex;
     align-items: center;
-    //gap: 25px;
+    gap: 25px;
+
+    //.nav__list--column
+    &--column{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
   }
 
   //.nav__item

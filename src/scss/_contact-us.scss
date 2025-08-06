@@ -3,6 +3,16 @@
   background-position: center center;
   background-repeat: no-repeat;
 
+  //.contact-us__inner
+  &__inner{
+    padding: 60px 50px;
+    border-radius: 12px;
+
+    @media screen and (max-width: 495px) {
+      padding: 60px 20px;
+    }
+  }
+
   //.contact-us__body
   &__body {
     padding: 30px;
@@ -22,6 +32,10 @@
     font-size: 29px;
     font-weight: 700;
     line-height: 140%;
+
+    @media screen and (max-width: 495px) {
+      font-size: 20px;
+    }
   }
 
   //.contact-us__form

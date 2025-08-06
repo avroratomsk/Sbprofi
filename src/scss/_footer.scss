@@ -1,3 +1,52 @@
 .footer {
   flex: 0 0 auto;
+  border-top: 1px solid rgba(167, 167, 167, 0.6);
+
+  //.footer__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  //.footer__col
+  &__col {
+  }
+
+  //.footer__logo
+  &__logo {
+  }
+
+  //.footer__nav
+  &__nav {
+    display: flex;
+    gap: 100px;
+
+    @media screen and (max-width: 992px) {
+      display: flex;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+    }
+  }
+
+  //.footer__contact
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  //.footer__socials
+  &__socials {
+  }
+
+  //.footer__btn
+  &__btn {
+    margin-top: 33px;
+  }
 }
