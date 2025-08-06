@@ -13,13 +13,13 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250806163649"
+    href="css/style.min.css?_v=20250806174433"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250806163649"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250806174433"
     rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
@@ -95,7 +95,41 @@
 
 
 <main>
-  
+  <div class="hero">
+  <div class="container">
+    <div class="hero__slider swiper">
+      <div class="hero__wrapper swiper-wrapper">
+        <div class="hero__slide swiper-slide">
+          <div class="hero__slide-content">
+            <h2>Мы знаем все про безопасность</h2>
+            <p class="hero__subtitle">Сопровождение физических лиц</p>
+            <p class="hero__descr">
+              Доверьте нам вашу безопасность, мы сделаем все для сохранения вашего здоровья...
+            </p>
+            <button type="button" class="hero__btn btn btn--grey">Оставить заявку</button>
+          </div>
+          <div class="hero__slide-image">
+            <picture><source srcset="img/sl-image.webp" type="image/webp"><img src="img/sl-image.jpeg" alt=""></picture>
+          </div>
+        </div>
+        <div class="hero__slide swiper-slide">
+          <div class="hero__slide-content">
+            <h2>Мы знаем все про безопасность</h2>
+            <p class="hero__subtitle">Сопровождение физических лиц</p>
+            <p class="hero__descr">
+              Доверьте нам вашу безопасность, мы сделаем все для сохранения вашего здоровья
+            </p>
+            <button type="button" class="hero__btn btn btn--grey">Оставить заявку</button>
+          </div>
+          <div class="hero__slide-image">
+            <picture><source srcset="img/sl-image.webp" type="image/webp"><img src="img/sl-image.jpeg" alt=""></picture>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
 
   <section class="services section">
     <div class="container">
@@ -413,6 +447,6 @@
   </div>
 </div>
 
-<script src="js/app.min.js?_v=20250806163649"></script>
+<script src="js/app.min.js?_v=20250806174433"></script>
 </body>
 </html>
