@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Услуга"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <section class="top-page">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Услуги
+          <meta itemprop="position" content="2"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            Проверка на полиграфе
+            <meta itemprop="position" content="3"/>
+          </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <div class="service__inner">
+        <div class="service__content">
+          <h1 class="service__title">Проверка на полиграфе</h1>
+          <p class="service__text">
+            Проверка на полиграфе — это эффективный способ получить
+            достоверную информацию в сложных и спорных
+            ситуациях, круглосуточно в Москве и Московской области.
+          </p>
+          <div class="service__action">
+            <p class="service__price">10 000 <span class="service__valute">₽</span></p>
+            <button type="button" class="service__btn btn btn--grey">Связаться с нами</button>
+          </div>
+        </div>
+        <div class="service__image">
+          <img src="@img/service.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards section">
+    <div class="container">
+      <div class="section-label cards__label">
+        <p>Как проходит процедура?</p>
+      </div>
+
+      <div class="cards__grid">
+        <div class="cards__item">
+          <div class="cards__num">1</div>
+          <div class="cards__content">
+            <p class="cards__title">Консультация</p>
+            <p class="cards__text">
+              Уточнение цели и формулировка вопросов
+            </p>
+          </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__num">2</div>
+          <div class="cards__content">
+            <p class="cards__title">Подготовка</p>
+            <p class="cards__text">
+              Разъяснение условий тестировани, проверка психоэмоционального состояния
+            </p>
+          </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__num">3</div>
+          <div class="cards__content">
+            <p class="cards__title">Тестирование</p>
+            <p class="cards__text">
+              С использованием современного сертифицированного оборудования
+            </p>
+          </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__num">4</div>
+          <div class="cards__content">
+            <p class="cards__title">Анализ </p>
+            <p class="cards__text">
+              Анализ результатов и выдача заключения
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  @@include('html/_contact-us.html')
+
+  @@include('html/_trust.html')
+
+  @@include('html/_reviews.html')
+
+</main>
+
+@@include('html/_footer.html')
+@@include('html/_author.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
