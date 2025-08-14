@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Услуга"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <section class="top-page">
+    <div class="container">
+      <h1 class="top-page__title">Контакты</h1>
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Контакты
+          <meta itemprop="position" content="2"/>
+        </a>
+      </div>
+    </div>
+  </section>
+  @@include('html/_contact-page.html')
+
+  @@include('html/_contact-us.html')
+</main>
+
+@@include('html/_footer.html')
+@@include('html/_author.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
