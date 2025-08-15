@@ -13,13 +13,13 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250814174757"
+    href="css/style.min.css?_v=20250815175954"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250814174757"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250815175954"
     rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
@@ -87,7 +87,7 @@
         </ul>
       </nav>
       <div class="header__actions actions">
-        <button type="button" class="btn btn--grey">Оставить заявку</button>
+        <button type="button" class="btn btn--grey" data-popup="leave-request">Оставить заявку</button>
       </div>
     </div>
   </div>
@@ -446,7 +446,86 @@
     </div>
   </div>
 </div>
+<div id="leave-request" class="popup popup_show">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <div class="popup__loading">
+        <img src="{% static 'theme/mb/images/loading.gif' %}" alt="Загрузка" title="Загрузка"/>
+      </div>
+      <h2 class="popup__title">Оставить заявку</h2>
+      <form action="" class="popup__form form" method="POST" id="order-form">
+        <div class="form__input">
+          <input type="text" class="" name="name" id="id_name_callback" minlength="3" maxlength="20" pattern="[А-Яа-яЁё\s]+"
+                 required>
+          <label for="id_name_callback">Имя</label>
+        </div>
+        <div class="form__input">
+          <input type="tel" class="" name="name" id="id_tel_callback" minlength="10" maxlength="15" required>
+          <label for="id_tel_callback">Номер телефона</label>
+        </div>
+        <div class="form__agreement">
+          <input type="checkbox" name="agreement" id="agreement" required>
+          <label for="agreement">Я согласен(а) с <a href="{% url 'politika' %}">политикой конфиденциальности</a></label>
+        </div>
+        <button type="submit" class="form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
 
-<script src="js/app.min.js?_v=20250814174757"></script>
+<div id="callback" class="popup ">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <div class="popup__loading">
+        <img src="{% static 'theme/mb/images/loading.gif' %}" alt="Загрузка" title="Загрузка"/>
+      </div>
+      <h2 class="popup__title">Обратный звонок</h2>
+      <form action="{% url 'callback' %}" class="popup__form form" method="POST" id="callback-form">
+        {% csrf_token %}
+        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required/>
+        <input type="tel" name="phone" class="form__input" placeholder="номер телефона" required data-tel-input/>
+        <div class="form__agreement">
+          <input type="checkbox" name="agreement" id="agreement-con" required>
+          <label for="agreement-con">Я согласен(а) с <a href="{% url 'politika' %}">политикой
+            конфиденциальности</a></label>
+        </div>
+        <button type="submit" class="form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <div class="popup__contact">
+        {% if offices %}
+        {% for office in offices %}
+        <div class="contact-address__card">
+          <p class="contact-address__name">{{ office.name }}</p>
+          <p class="contact-address__address">{{ office.address }}</p>
+          <a href="tel:{{ office.phone }}" class="contact-address__phone">{{ office.phone }}</a>
+          <p class="contact-address__work-time">{{ office.time_work }}</p>
+        </div>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/app.min.js?_v=20250815175954"></script>
 </body>
 </html>
