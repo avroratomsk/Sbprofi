@@ -1,7 +1,9 @@
 "use strict"
 
+import {bodyLock, bodyUnLock} from "./baseFunctions.js";
+
 const openPopup = (e) => {
-  // bodyLock();
+  bodyLock();
   const currentPopup = document.getElementById(e.currentTarget.dataset.popup);
   currentPopup.classList.add("popup_show");
 
@@ -12,7 +14,7 @@ const openPopup = (e) => {
 };
 
 const closePopup = (e) => {
-  // bodyUnLock();
+  bodyUnLock();
   document.querySelector(".popup_show").classList.remove("popup_show");
 };
 
@@ -20,7 +22,7 @@ document.addEventListener("keydown", (e) => {
   if (e.keyCode === 27 && document.querySelector(".popup_show").classList.contains("popup_show")) {
     document.querySelector(".popup_show").classList.remove("popup_show");
     document.body.classList.remove("_lock");
-    // bodyUnLock();
+    bodyUnLock();
   }
 });
 
@@ -29,7 +31,7 @@ popup?.forEach(popup => popup.addEventListener("click", (e) => {
   if (!e.target.closest(".popup__content") && !e.target.closest(".popup-centered__content")) {
     e.currentTarget.classList.remove("popup_show");
     document.body.classList.remove("_lock");
-    // bodyUnLock();
+    bodyUnLock();
   }
 }));
 
