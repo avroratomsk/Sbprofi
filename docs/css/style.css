@@ -1701,7 +1701,7 @@ img {
 .services-grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 26px;
 }
 
@@ -1860,7 +1860,7 @@ img {
 .news__grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 38px;
 }
 
@@ -2213,7 +2213,6 @@ img {
 .breadcrumbs__item:not(:last-child)::after {
   content: "";
   display: block;
-  background-image: url("/img/icon/i-arrow-right-bred.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;

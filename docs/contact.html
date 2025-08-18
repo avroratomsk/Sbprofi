@@ -13,13 +13,13 @@
   <title>Услуга</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250815175954"
+    href="css/style.min.css?_v=20250818120635"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250815175954"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250818120635"
     rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
@@ -59,8 +59,12 @@
   <div class="container">
     <div class="header__inner">
       <a href="/" class="header__logo">
-        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
-        <picture><source srcset="img/logo-text.webp" type="image/webp"><img src="img/logo-text.png" alt=""></picture>
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img src="img/logo.png" alt=""></picture>
+        <picture>
+          <source srcset="img/logo-text.webp" type="image/webp">
+          <img src="img/logo-text.png" alt=""></picture>
       </a>
       <nav class="header__nav nav">
         <button type="button" class="nav__close close"></button>
@@ -113,72 +117,84 @@
     </div>
   </section>
   <div class="contact">
-  <div class="container">
-    <div class="contact__row">
-      <div class="contact__left">
-        <div class="contact__left-inner">
-          <div class="contact__item">
-            <p class="contact__label">Адрес:</p>
-            <p class="contact__info">г. Москва, Московская область</p>
-          </div>
-          <div class="contact__item">
-            <p class="contact__label">Режим работы:</p>
-            <p class="contact__info">Круглосуточно</p>
-          </div>
-          <div class="contact__item contact__item-horiz">
-            <p class="contact__label">Email:</p>
-            <p class="contact__info"><a href="">sbPROfi@gmail.com</a></p>
-          </div>
-          <div class="contact__item">
-            <p class="contact__label">Телефон:</p>
-            <p class="contact__info"><a href="">+7 (999) 999-19-19</a></p>
+    <div class="container">
+      <div class="contact__row">
+        <div class="contact__left">
+          <div class="contact__left-inner">
+            <div class="contact__item">
+              <p class="contact__label">Адрес:</p>
+              <p class="contact__info">г. Москва, Московская область</p>
+            </div>
+            <div class="contact__item">
+              <p class="contact__label">Режим работы:</p>
+              <p class="contact__info">Круглосуточно</p>
+            </div>
+            <div class="contact__item contact__item-horiz">
+              <p class="contact__label">Email:</p>
+              <p class="contact__info"><a href="">sbPROfi@gmail.com</a></p>
+            </div>
+            <div class="contact__item">
+              <p class="contact__label">Телефон:</p>
+              <p class="contact__info"><a href="">+7 (999) 999-19-19</a></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact__right">
-        <div class="contact__map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A29b7ee4bce237db384d2ac41aff71f5c1b06ef00f12af3ad8064a2665018ff40&amp;source=constructor"
-            width="100%" height="500" frameborder="0"></iframe>
+        <div class="contact__right">
+          <div class="contact__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A29b7ee4bce237db384d2ac41aff71f5c1b06ef00f12af3ad8064a2665018ff40&amp;source=constructor"
+              width="100%" height="500" frameborder="0"></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <div class="contact-us section">
-  <div class="container">
-    <div class="contact-us__inner" style="background-image: url('./img/contact-us.jpeg')">
-      <div class="contact-us__body">
-        <div class="contact-us__label section-label">
-          <p>Обратная связь</p>
-        </div>
-        <h2 class="contact-us__title">
-          Оставьте заявку на интересующую вас услугу
-        </h2>
-        <form action="" class="contact-us__form form ">
-          <div class="form__input">
-            <input type="text" class="" name="name" id="id_name" minlength="3" maxlength="20" pattern="[А-Яа-яЁё\s]+"
-                   required>
-            <label for="id_name">Имя</label>
+    <div class="container">
+      <div class="contact-us__inner" style="background-image: url('./img/contact-us.jpeg')">
+        <div class="contact-us__body">
+          <div class="contact-us__label section-label">
+            <p>Обратная связь</p>
           </div>
-          <div class="form__input">
-            <input type="tel" class="" name="name" id="id_tel" minlength="10" maxlength="15" required>
-            <label for="id_tel">Номер телефона</label>
-          </div>
-          <div class="form__bottom">
-            <div class="form__socials socials">
-              <a href="" class="socials__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
-              <a href="" class="socials__link"><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
-              <a href="" class="socials__link"><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+          <h2 class="contact-us__title">
+            Оставьте заявку на интересующую вас услугу
+          </h2>
+          <form action="" class="contact-us__form form ">
+            <div class="form__input">
+              <input type="text" class="" name="name" id="id_name" minlength="3" maxlength="20" pattern="[А-Яа-яЁё\s]+"
+                     required>
+              <label for="id_name">Имя</label>
             </div>
-            <button type="button" class="form__submit btn btn--grey">Перезвоните мне</button>
-          </div>
-        </form>
+            <div class="form__input">
+              <input type="tel" class="" name="name" id="id_tel" minlength="10" maxlength="15" required>
+              <label for="id_tel">Номер телефона</label>
+            </div>
+            <div class="form__bottom">
+              <div class="form__socials socials">
+                <a href="" class="socials__link">
+                  <picture>
+                    <source srcset="img/tg.webp" type="image/webp">
+                    <img src="img/tg.png" alt=""></picture>
+                </a>
+                <a href="" class="socials__link">
+                  <picture>
+                    <source srcset="img/wh.webp" type="image/webp">
+                    <img src="img/wh.png" alt=""></picture>
+                </a>
+                <a href="" class="socials__link">
+                  <picture>
+                    <source srcset="img/vk.webp" type="image/webp">
+                    <img src="img/vk.png" alt=""></picture>
+                </a>
+              </div>
+              <button type="button" class="form__submit btn btn--grey">Перезвоните мне</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </main>
 
 <div class="footer section">
@@ -186,7 +202,9 @@
     <div class="footer__row">
       <div class="footer__col">
         <a href="" class="footer__logo">
-          <picture><source srcset="img/logo-full.webp" type="image/webp"><img src="img/logo-full.png" alt=""></picture>
+          <picture>
+            <source srcset="img/logo-full.webp" type="image/webp">
+            <img src="img/logo-full.png" alt=""></picture>
         </a>
       </div>
       <div class="footer__col">
@@ -213,9 +231,21 @@
           <p>Телефон: <a href="tel:+7 (999) 999-19-19">+7 (999) 999-19-19</a></p>
           <p>Email: <a href="mailto:sbPROfi@gmail.com">+sbPROfi@gmail.com</a></p>
           <div class="footer__socials socials">
-            <a href="" class="socials__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
-            <a href="" class="socials__link"><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
-            <a href="" class="socials__link"><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+            <a href="" class="socials__link">
+              <picture>
+                <source srcset="img/tg.webp" type="image/webp">
+                <img src="img/tg.png" alt=""></picture>
+            </a>
+            <a href="" class="socials__link">
+              <picture>
+                <source srcset="img/wh.webp" type="image/webp">
+                <img src="img/wh.png" alt=""></picture>
+            </a>
+            <a href="" class="socials__link">
+              <picture>
+                <source srcset="img/vk.webp" type="image/webp">
+                <img src="img/vk.png" alt=""></picture>
+            </a>
           </div>
         </div>
         <button type="button" class="footer__btn btn btn--grey">Связаться с нами</button>
@@ -235,6 +265,6 @@
   </div>
 </div>
 
-<script src="js/app.min.js?_v=20250815175954"></script>
+<script src="js/app.min.js?_v=20250818120635"></script>
 </body>
 </html>
