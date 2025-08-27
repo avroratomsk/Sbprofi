@@ -1,0 +1,39 @@
+.text-page {
+  padding: 60px 0 0;
+}
+
+
+.text {
+  h1,h2,h3,h4,h5,h6 {
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 7px;
+    line-height: 150%;
+    font-size: 16px;
+  }
+
+  ul,ol {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    li {
+      position: relative;
+      padding-left: 16px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 2px;
+        background: $color-primary;
+      }
+    }
+  }
+}

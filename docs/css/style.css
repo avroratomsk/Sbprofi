@@ -2840,6 +2840,53 @@ body._lock::after {
   }
 }
 
+.text-page {
+  padding: 60px 0 0;
+}
+
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.text p {
+  margin-bottom: 7px;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.text ul,
+.text ol {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.text ul li,
+.text ol li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.text ul li::before,
+.text ol li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background: #333333;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
