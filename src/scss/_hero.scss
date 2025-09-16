@@ -16,12 +16,16 @@
     gap: 63px;
     overflow: hidden;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 578px) {
+      flex-direction: column;
+    }
   }
 
   //.hero__slide-content
   &__slide-content {
     @media screen and (min-width: 992px) {
-      flex: 1 1 469px;
+      flex: 1 1 508px;
     }
 
     h2 {
@@ -88,7 +92,11 @@
 
   //.hero__slide-image
   &__slide-image {
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) {
+      flex: 1 1 469px;
+    }
+
+    @media (min-width: 578px) and (max-width: 992px) {
       position: absolute;
       top: 0;
       right: 20px;
@@ -96,10 +104,6 @@
       height: 100px;
       opacity: .5;
       z-index: -1;
-    }
-
-    @media screen and (max-width: 576px) {
-      display: none;
     }
 
     img {

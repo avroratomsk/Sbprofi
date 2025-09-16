@@ -50,6 +50,8 @@
 
   //.services-grid__item
   &__item {
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid rgba(178, 178, 178, 0.67);
@@ -81,6 +83,10 @@
 
   //.services-grid__content
   &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
     background: #F6F6F6;
   }
@@ -96,6 +102,7 @@
 
   //.services-grid__descr
   &__descr {
+    flex: 1 1 auto;
     margin-bottom: 17px;
   }
 
@@ -116,5 +123,9 @@
     }
   }
 
+  //.services-grid__btn
+  &__btn {
+    margin-top: 20px;
+  }
 
 }
