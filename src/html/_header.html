@@ -8,7 +8,6 @@
       <nav class="header__nav nav">
         <button type="button" class="nav__close close"></button>
         <ul class="nav__list">
-          <li class="nav__item active"><a href="#" class="nav__link">Главная</a></li>
           <li class="nav__item">
             <div class="nav__item-inner">
               <a href="#" class="nav__link">О нас</a>
@@ -24,13 +23,29 @@
               <li class="submenu__item"><a href="" class="submenu__link">Сертификаты</a></li>
             </ul>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+          <li class="nav__item">
+            <div class="nav__item-inner">
+              <a href="#" class="nav__link">Услуги</a>
+              <button type="button" class="nav__icon">
+                <img src="@img/icon/i-arrow-down.svg" alt="Стрелочка вниз">
+              </button>
+            </div>
+            <ul class="nav__submenu submenu">
+              <li class="submenu__item"><a href="" class="submenu__link">Лицензия</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Команда</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Портфолио</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Награды</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Сертификаты</a></li>
+            </ul>
+          </li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
         </ul>
       </nav>
       <div class="header__actions actions">
-        <button type="button" class="btn btn--grey" data-popup="callback">Оставить заявку</button>
+        <a href="tel:" class="header__phone">8 (985) 847-09-70</a>
+        <button type="button" class="header__btn btn btn--grey" data-popup="callback">Оставить заявку</button>
+        <button type="button" class="burger"><span></span></button>
       </div>
     </div>
   </div>
