@@ -19,3 +19,9 @@ closeBtn?.addEventListener('click', () => {
   document.querySelector('.nav').classList.remove('active');
 })
 
+const yearCopyright = document.getElementById('year');
+const currentYear = new Date().getFullYear()
+
+yearCopyright.innerText = currentYear.toString();
+
+

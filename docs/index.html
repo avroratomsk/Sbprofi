@@ -13,13 +13,13 @@
   <title>Сборка GULP</title>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250917143036"
+    href="css/style.min.css?_v=20250919094037"
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250917143036"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250919094037"
     rel="stylesheet">
 
   <!-- https://realfavicongenerator.net -->
@@ -423,6 +423,7 @@
             <input type="tel" class="" name="name" id="id_tel" minlength="10" maxlength="15" required>
             <label for="id_tel" class="form__label">Номер телефона</label>
           </div>
+
           <div class="form__bottom">
             <div class="form__socials socials">
               <a href="" class="socials__link"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
@@ -430,6 +431,10 @@
               <a href="" class="socials__link"><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
             </div>
             <button type="button" class="form__submit btn btn--grey">Перезвоните мне</button>
+          </div>
+          <div class="form__agreement">
+            <input type="checkbox" name="agreement" id="agreement" required>
+            <label for="agreement">Я согласен(а) с <a href="">политикой конфиденциальности</a></label>
           </div>
         </form>
       </div>
@@ -484,7 +489,7 @@
 <div class="author">
   <div class="container">
     <div class="author__inner">
-      <p class="author__copyright">© 2025 ООО “СБ-ПРОФИ”</p>
+      <p class="author__copyright">© <span id="year"></span> ООО “СБ-ПРОФИ”</p>
       <p class="author__company">
         Сайт разработан - <a href="https://xn----7sbah6bllcobpj.xn--p1ai/" target="_blank">РА Аврора</a>
       </p>
@@ -523,6 +528,6 @@
 
 
 
-<script src="js/app.min.js?_v=20250917143036"></script>
+<script src="js/app.min.js?_v=20250919094037"></script>
 </body>
 </html>
