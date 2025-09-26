@@ -1388,12 +1388,22 @@ template {
 }
 
 .header {
+  margin-top: 50px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   border-top: 1px solid rgba(51, 51, 51, 0.15);
   border-bottom: 1px solid rgba(51, 51, 51, 0.15);
-  margin-top: 50px;
+  z-index: 99;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  background-color: #FFFFFF;
 }
 
 .header__inner {

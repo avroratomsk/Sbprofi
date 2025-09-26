@@ -1,8 +1,25 @@
+//.header {
+//  transition: top 0.3s ease, background-color 0.3s ease;
+//}
+//body {
+//  transition: padding-top 0.3s ease;
+//}
 .header {
+  margin-top: 50px;
   flex: 0 0 auto;
   border-top: 1px solid rgba($color: $color-primary, $alpha: 0.15);
   border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0.15);
-  margin-top: 50px;
+  z-index: 99;
+
+  &.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    background-color: #FFFFFF;
+  }
+
 
   //.header__inner
   &__inner {
