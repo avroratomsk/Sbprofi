@@ -1,19 +1,15 @@
-const inputs = document.querySelectorAll('input');
-inputs?.forEach((input) => {
-  input.addEventListener('focus', (e) => {
-    const inputFocus = e.currentTarget;
-    const label = inputFocus.nextElementSibling;
-    if (inputFocus && label.classList.contains('form__label')) {
-      label.style.cssText = `top: 0; font-size: 10px;`;
-    }
-  })
+const inputs = document.querySelectorAll('.form input[type="text"], .form input[type="tel"]');
 
-  input.addEventListener('focusout', (e) => {
-    const inputFocus = e.currentTarget;
-    const label = inputFocus.nextElementSibling;
-    if (inputFocus && inputFocus.value.trim() === "" && label.classList.contains('form__label')) {
+inputs.forEach((input) => {
+  const label = input.labels[0];
+
+  input.addEventListener('focus', () => {
+    if (label) label.style.cssText = `top: 0; font-size: 10px;`;
+  });
+
+  input.addEventListener('blur', () => {
+    if (label && input.value.trim() === "") {
       label.style.cssText = `top: 50%; font-size: 16px;`;
     }
-  })
-})
-
+  });
+});

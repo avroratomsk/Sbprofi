@@ -4,6 +4,7 @@ import './modules/slider.js';
 import './modules/popup.js';
 import './modules/focusInput.js';
 import './modules/stickyMenu.js';
+import './modules/mask.js';
 
 functions.isWebp();
 
