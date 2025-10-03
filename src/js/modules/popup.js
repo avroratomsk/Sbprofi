@@ -7,7 +7,7 @@ const openPopup = (e) => {
   const currentPopup = document.getElementById(e.currentTarget.dataset.popup);
   currentPopup.classList.add("popup_show");
 
-  const hiddenField = currentPopup.querySelector("#order-product");
+  const hiddenField = currentPopup.querySelector(".service");
   if (hiddenField) {
     hiddenField.value = e.currentTarget.dataset.name;
   }
